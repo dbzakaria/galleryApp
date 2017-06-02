@@ -9,8 +9,7 @@ function * fetchPhotos(action) {
     try{
 
         const response = yield call(api.getAlbumPhotos , action.payload.album_id );
-        console.log("response:.......",response);
-        console.log(action);
+    
          if (response.errors){
             console.log('show errors')
          }else{
@@ -23,7 +22,7 @@ function * fetchPhotos(action) {
 
 }
 
-function * fetchPhotoDetail(action) {
+/*function * fetchPhotoDetail(action) {
     try{
 
         const response = yield call(api.getPhotoDetails);
@@ -37,11 +36,11 @@ function * fetchPhotoDetail(action) {
         console.log(err);
     }
 
-}
+}*/
 
 export function * photosSagas() {
     yield [
-        takeEvery("PHOTOS_FETCH_REQUESTED", fetchPhotos),
-        takeEvery("PHOTO_DETAILS_FETCH_REQUESTED", fetchPhotoDetail)
+        takeEvery("PHOTOS_FETCH_REQUESTED", fetchPhotos)
+        //takeEvery("PHOTO_DETAILS_FETCH_REQUESTED", fetchPhotos)
     ]
 }

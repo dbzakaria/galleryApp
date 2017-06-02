@@ -7,31 +7,20 @@ import { Actions } from 'react-native-router-flux';
 class Photo extends Component {
 
 	handlePress = () => {
-    	Alert.alert(this.props.photo.id.toString());
-    	// make call to fetch photos given album id
-    	//console.log(this.props.photo.album)
-    	// go to photos page
-    	//Actions.photos({album: this.props.album})
+    	Actions.details({photo: this.props.photo})
   	}
 
   	render () {
   		var photo = this.props.photo;
-      console.log(photo.title);
+      console.log(photo.thumbnailUrl);
   		return (
   			<View>
           <TouchableOpacity onPress={this.handlePress} >
-            <Text>
-              {photo.title}
-            </Text>
+            <Image source={{ uri: photo.thumbnailUrl }} style={{width: 50, height: 50}} />
+            <Text>{photo.title}</Text>
           </TouchableOpacity>
         </View>
-  		);
-   // }
-      //else {
-      //return (
-       // null
-    //  );
-   // }
+  	);
   }
 }
 

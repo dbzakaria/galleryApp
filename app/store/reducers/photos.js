@@ -9,8 +9,8 @@ export default function photos(state={
         case "GET_PHOTOS":
             return {...state, photos: action.photos }
 
-        case "GET_PHOTO_DETAILS":
-            return {...state, details: action.details }
+        //case "GET_PHOTO_DETAILS":
+            //return {...state, details: action.details }
       
         default:
             return state

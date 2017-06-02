@@ -28,17 +28,6 @@ export default (function () {
         .then(parseJSON);
     }
 
-    function getPhotoDetails(photoId) {
-        return fetch(config.ENDPOINTS.PHOTOS + '/' + photoId, {
-            method: 'get',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-        })
-        .then(checkStatus)
-        .then(parseJSON);
-    }
 
     function parseJSON(response) {
         console.log(response)
@@ -59,6 +48,6 @@ export default (function () {
     return {
         getAlbums,
         getAlbumPhotos,
-        getPhotoDetails
+//        getPhotoDetails
     };
 }());
