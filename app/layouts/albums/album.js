@@ -14,8 +14,8 @@ import {  ListItem, Thumbnail, Body } from 'native-base';
     super(props);
 
     if (this.props.album !== undefined) {
-      var album_id = this.props.album.id;
-      this.props.fetchAlbumFirstPhoto(album_id);
+      //var album_id = this.props.album.id;
+      //this.props.fetchAlbumFirstPhoto(album_id);
 
       var album = this.props.album;
     } 
@@ -34,7 +34,6 @@ import {  ListItem, Thumbnail, Body } from 'native-base';
   render () {
 
     var album = this.props.album;
-
 		return (
       <View>
         <ListItem onPress={this.handlePress}>

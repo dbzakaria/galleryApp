@@ -17,6 +17,7 @@ function * fetchAlbums(action) {
     }
 }
 
+//trial to fetch first photo for each album
 function * fetchAlbumFirstPhoto(action) {
     try {
 
