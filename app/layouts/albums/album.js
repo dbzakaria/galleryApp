@@ -6,6 +6,8 @@ import {  Text, View , ScrollView , TouchableOpacity , Alert } from 'react-nativ
 
 import { Actions } from 'react-native-router-flux';
 
+import { Container, Content, List, ListItem, Thumbnail, Body } from 'native-base';
+
  class Album extends Component {
 
   constructor(props) {
@@ -19,7 +21,7 @@ import { Actions } from 'react-native-router-flux';
       this.props.fetchAlbumFirstPhoto(album_id);
 
       var album = this.props.album;
-      var firstPhoto = this.props.albumFirstPhoto;
+     // var firstPhoto = this.props.albumFirstPhoto;
     } else {
       console.log('props.album is undefined')
     }
@@ -45,16 +47,28 @@ import { Actions } from 'react-native-router-flux';
       var album = this.props.album;
       console.log('Album.render', album.id);
   		
-      var firstPhoto = this.props.albumFirstPhoto;
+      //var firstPhotoUrl = this.props.albumFirstPhoto.thumbnailUrl;
+      //console.log("FIRST_PHOTOOO", firstPhoto);
 
   		return (
-  			<View>
+        <View>
+          <ListItem onPress={this.handlePress}>
+            <Thumbnail square size={80} source={{ uri: 'http://placehold.it/150/92c952' }}  style={{right: 5}} />
+              <Body>
+                <Text>{album.title}</Text>
+              </Body>
+          </ListItem>
+        </View>
+
+
+
+  		/*}	<View>
   				<TouchableOpacity onPress={this.handlePress} >
           	<Text style={{ padding: 10}}>
             	{album.title}
           	</Text>
           </TouchableOpacity>
-  			</View>
+  			</View>*/
   		);
   	}
 	

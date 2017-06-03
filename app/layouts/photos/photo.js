@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-import {  Text, View , ScrollView , TouchableOpacity , Alert, Image } from 'react-native';
+import {  Text, View  , TouchableOpacity , Image  } from 'react-native';
 
 import { Actions } from 'react-native-router-flux';
+
 
 class Photo extends Component {
 
@@ -11,18 +12,18 @@ class Photo extends Component {
   	}
 
   	render () {
-      console.log("Photo.render");
-  		var photo = this.props.photo;
-      console.log(photo.thumbnailUrl);
+      var photo = this.props.photo;
+
   		return (
-  			<View>
+  			<View style={{flex: 1,  flexDirection: 'row' }} >
           <TouchableOpacity onPress={this.handlePress} >
-            <Image source={{ uri: photo.thumbnailUrl }} style={{width: 50, height: 50}} />
-            <Text>{photo.title}</Text>
+            <Image source={{ uri: photo.thumbnailUrl }} style={{width: 130, height: 130 }} />
           </TouchableOpacity>
         </View>
   	);
   }
 }
+
+
 
 export default Photo;

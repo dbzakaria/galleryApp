@@ -4,6 +4,8 @@ import {  Text, View , ScrollView , TouchableOpacity , Alert, Image } from 'reac
 
 import { Actions } from 'react-native-router-flux';
 
+import { Container, Content, Card, CardItem, Thumbnail, Button, Icon, Left, Body } from 'native-base';
+
 class details extends Component {
 
 	
@@ -14,13 +16,25 @@ class details extends Component {
 
 
   		return (
-  			<View>
-  				  <Image source={{ uri: image }} style={{width: 400, height: 400}} />
-          	<Text style={{ padding: 10 , fontSize: 20 , top: 70}}>
-            	{details}
-          	</Text>
-         
-  			</View>
+        <Container style={{top:70, padding: 20}}>
+          <Content>
+            <Card >
+              <CardItem>
+                <Left>
+                    <Body>
+                        <Text style={{fontSize: 20}}>
+                          {details}
+                        </Text>
+                    </Body>
+                </Left>
+              </CardItem>
+              <CardItem cardBody>
+                  <Image source={{ uri: image }} style={{width: 350, height: 400}} resizeMode='cover' />
+              </CardItem>
+              
+           </Card>
+          </Content>
+            </Container>
   		);
   	}
 	
