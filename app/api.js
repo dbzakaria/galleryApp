@@ -4,7 +4,6 @@ import config from './config';
 export default (function () {
 
     function getAlbums() {
-        console.log("api_getAlbums");
         return fetch(config.ENDPOINTS.ALBUMS, {
             method: 'get',
             headers: {
@@ -17,7 +16,6 @@ export default (function () {
     }
 
     function getAlbumPhotos(album_id) {
-        console.log("api.getAlbumPhotos " , album_id);
         return fetch(config.ENDPOINTS.ALBUMS + '/' + album_id + '/photos' , {
             method: 'get',
             headers: {

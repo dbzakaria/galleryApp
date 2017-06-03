@@ -3,7 +3,6 @@ import { Actions, Scene } from 'react-native-router-flux';
 import albums from './layouts/albums';
 import photos from './layouts/photos';
 import details from './layouts/photos/details';
-//import globalStyles from './layouts/shared/globalStyles';
 
 
 export default scenes = Actions.create(

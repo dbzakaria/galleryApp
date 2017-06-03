@@ -12,7 +12,6 @@ function * fetchPhotos(action) {
          if (response.errors){
             console.log('show errors')
          }else{
-            console.log("GET_PHOTOS")
             yield put({ type: 'GET_PHOTOS', photos: response })
          }
     } catch(err) {

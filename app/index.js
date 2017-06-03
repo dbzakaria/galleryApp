@@ -53,27 +53,8 @@ export default class App extends Component {
         </View>
       );
     }
-    //this.store_redux = initStore();
-    //this.store_redux = initStore({})
-   /* if( this.store_redux === undefined ) {
-      store.get('reduxState').then((data) => {
-        this.store_redux = initStore(data);
-        this.forceUpdate();
-        return(<View></View>);
-      });
-      return(<View></View>);
-    } else {
-      console.log("testing.....");*/
-      /*return (
-        <View style={{ flex: 1 }}>
-          <Provider store={store_redux}>
-             <RouterWithRedux scenes={scenes}>
-             </RouterWithRedux>
-          </Provider>
-        </View>
-        );*/
-    }
   }
+ }
 
 
 
