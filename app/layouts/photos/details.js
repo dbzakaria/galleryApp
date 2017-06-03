@@ -15,8 +15,8 @@ class details extends Component {
 
   		return (
   			<View>
-  				  <Image source={{ uri: image }} style={{width: 100, height: 100}} />
-          	<Text style={{ padding: 10 , fontSize: 50 , top: 70}}>
+  				  <Image source={{ uri: image }} style={{width: 400, height: 400}} />
+          	<Text style={{ padding: 10 , fontSize: 20 , top: 70}}>
             	{details}
           	</Text>
          

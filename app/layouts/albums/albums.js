@@ -11,22 +11,25 @@ class albums extends Component {
 	constructor(props) {
     super(props);
 
+    console.log("albums_constructor");
     this.props.fetchAlbums();
-  }
 
+  }
   
 
   render () {
 
-    
+    console.log("albums.render");
     if (this.props.albums.length ) {
       const albumsTitles = this.props.albums.map((album, index) => (
         <Album album={album} key={album.id} />
+
       ));
 
       return (
          <View style={{flex:1 , flexDirection: 'column', top: 70}}>
            <ScrollView>
+
             {albumsTitles}
            </ScrollView>
         </View>
@@ -34,7 +37,7 @@ class albums extends Component {
     }
     else {
       return (
-      	null
+      	<View></View>
       );
     }
   }

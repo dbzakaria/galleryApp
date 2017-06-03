@@ -9,6 +9,7 @@ class photos extends Component {
 	constructor(props) {
     super(props);
 
+    console.log("Photos.constructor");
     var album_id  = this.props.album.id;
    // var photo_album_id  = this.props.photo.id;
     //console.log(album_id,"..........");
@@ -21,11 +22,13 @@ class photos extends Component {
     //console.log(album_id);
     //var album_id  = this.props.album.id;
     //console.log(album_id);
+    console.log("Photos.componentWillMount");
   }
   
    
 
   render () {
+    console.log("Photos.render");
     //var album_id  = this.props.album.id;
     //console.log(album_id);
     

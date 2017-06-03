@@ -11,6 +11,7 @@ class Photo extends Component {
   	}
 
   	render () {
+      console.log("Photo.render");
   		var photo = this.props.photo;
       console.log(photo.thumbnailUrl);
   		return (
