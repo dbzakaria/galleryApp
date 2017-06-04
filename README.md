@@ -6,11 +6,9 @@
 A simple photo gallery app.
 
 Application contains three screens:
-1. Album list.![alt album_list.jpg](./screenshots/album_list.jpg | width=100)
-2. Album photos list (shown when clicking on an album from the album list screen). 
-![alt album_photo_list.jpg](./screenshots/album_photo_list.jpg | width=100)
-3. Photo details screen, showing the photo and its details (shown when clicking on a photo from the photo list).
-![alt photo_details.jpg](./screenshots/photo_details.jpg | width=100)
+1. Album list. ![alt album_list.jpg](./screenshots/album_list.jpg )
+2. Album photos list (shown when clicking on an album from the album list screen). ![alt album_photo_list.jpg](./screenshots/album_photo_list.jpg )
+3. Photo details screen, showing the photo and its details (shown when clicking on a photo from the photo list). ![alt photo_details.jpg](./screenshots/photo_details.jpg )
 
 ### Technologies used
 
