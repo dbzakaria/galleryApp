@@ -15,7 +15,7 @@ class Photo extends Component {
     var photo = this.props.photo;
 
 		return (
-			<View style={{flex: 1,  flexDirection: 'row' }} >
+			<View style={{ margin: 1 }} >
         <TouchableOpacity onPress={this.handlePress} >
           <Image source={{ uri: photo.thumbnailUrl }} style={{width: 130, height: 130 }} />
         </TouchableOpacity>

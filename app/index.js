@@ -29,8 +29,6 @@ import initStore from './store';
 
 const RouterWithRedux = connect()(Router);
 
-const store_redux = initStore();
-
 export default class App extends Component {
 
   

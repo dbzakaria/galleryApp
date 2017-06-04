@@ -10,6 +10,7 @@
     "native-base": "^2.1.4",
     "react": "16.0.0-alpha.6",
     "react-native": "0.44.2",
+    "react-native-grid-view": "^0.4.1",
     "react-native-router-flux": "^3.39.2",
     "react-native-simple-store": "^1.2.0",
     "react-redux": "^5.0.5",
